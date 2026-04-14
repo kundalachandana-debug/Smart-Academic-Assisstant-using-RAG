@@ -53,7 +53,7 @@ LANGUAGES = {
 }
 
 
-@st.cache_resource(show_spinner=False)
+@st.cache_resource
 def get_chain():
     vs = load_vectorstore()
     return build_rag_chain(vs)
